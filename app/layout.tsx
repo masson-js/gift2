@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Twój list dotarł do Świętego Mikołaja! 🎄",
-  description: " Mikołaj i jego elfy już pracują nad Twoim prezentem!",
+  title: "Lista życzeń dla Świętego Mikołaja",
+  description: " Twój list do Świętego Mikołaja! 🎄",
 };
 
 export default function RootLayout({
