@@ -164,7 +164,7 @@ export function GiftForm() {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="name" className="block text-lg font-medium text-gray-900">
                 Imię
               </label>
               <input
@@ -175,12 +175,12 @@ export function GiftForm() {
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, name: e.target.value })}
                 required
                 disabled={isLoading}
-                className="w-full px-3 py-2 border border-red-200 rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
+                className="w-full px-3 py-2 font-bold border border-red-200 rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="class" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="class" className="block text-lg font-medium text-gray-700">
                 Klasa
               </label>
               <input
@@ -191,12 +191,12 @@ export function GiftForm() {
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, class: e.target.value })}
                 required
                 disabled={isLoading}
-                className="w-full px-3 py-2 border border-red-200 rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
+                className="w-full px-3 py-2 border font-bold border-red-200 rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="age" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="age" className="block text-sm font-medium text-gray-700 text-lg">
                 Wiek
               </label>
               <input
@@ -209,12 +209,12 @@ export function GiftForm() {
                 min="1"
                 max="99"
                 disabled={isLoading}
-                className="w-full px-3 py-2 border border-red-200 rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
+                className="w-full px-3 py-2 border border-red-200 font-bold rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="giftWish" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="giftWish" className="block text-sm font-medium text-gray-700 text-lg">
                 Jaki prezent chcesz?
               </label>
               <input
@@ -225,12 +225,12 @@ export function GiftForm() {
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, giftWish: e.target.value })}
                 required
                 disabled={isLoading}
-                className="w-full px-3 py-2 border border-red-200 rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
+                className="w-full px-3 py-2 border border-red-200 font-bold rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="giftLink" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="giftLink" className="block text-sm font-medium text-gray-700 text-lg">
                 Link do prezentu
               </label>
               <input
@@ -240,7 +240,7 @@ export function GiftForm() {
                 value={formData.giftLink}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, giftLink: e.target.value })}
                 disabled={isLoading}
-                className="w-full px-3 py-2 border border-red-200 rounded-md focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
+                className="w-full px-3 py-2 border border-red-200 rounded-md font-bold focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-200 disabled:opacity-50"
               />
             </div>
 
